@@ -8,6 +8,6 @@ if [[ ! -d img ]]; then
   mkdir img
 fi
 
-gcc main.c -o out/main
+g++ main.cpp -o out/main -lm
 out/main > "img/$1.ppm"
-feh --zoom max --geometry 1024x1024 img/"$1.ppm"
+feh --zoom max --geometry 1024x576  img/"$1.ppm"
